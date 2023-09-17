@@ -1,0 +1,104 @@
+.container {
+  position: relative;
+  margin-top: 132px;
+  display: flex;
+  max-width: 402px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  z-index: 2;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.title {
+  align-self: stretch;
+  color: var(--White-Base, #fff);
+
+  font-family: var(--Helvetica);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.span {
+  color: var(--White-Base, #fff);
+  font-family: var(--Helvetica);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.span_on {
+  font-weight: 700;
+}
+
+.span_off {
+  text-decoration-line: underline;
+}
+
+.fetching {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin: 7vh;
+  border: 2px dashed var(--Orange-Base, #f86600);
+  animation-name: scroll-fetching;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes scroll-fetching {
+  100% {
+    transform: rotate(180deg) scale(3);
+  }
+}
+
+@media (min-width: 1356px) {
+  .container {
+    margin-left: 527px;
+    transition: margin-left 0.3s ease;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1355px) {
+  .container {
+    margin-left: 362px;
+    transition: margin-left 0.3s ease;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin-left: 290px;
+    transition: margin-left 0.3s ease;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    margin-top: 140px;
+    margin-left: 169px;
+    margin-bottom: 92px;
+    transition: margin-left 0.3s ease;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 140px;
+    margin-left: 72px;
+    margin-bottom: 92px;
+    transition: margin-left 0.3s ease;
+  }
+}
