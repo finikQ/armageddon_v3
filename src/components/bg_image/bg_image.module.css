@@ -1,0 +1,61 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex: 1;
+}
+
+.container {
+  position: sticky;
+  top: 138px;
+  margin-top: 138px;
+}
+
+@media (min-width: 1356px) {
+  .container {
+    margin-left: -124px;
+    width: 536px;
+    height: 620px;
+    transition: margin-left 0.3s ease;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1355px) {
+  .container {
+    margin-left: -73px;
+    width: 377px;
+    height: 436px;
+    transition: margin-left 0.3s ease;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin-left: -148px;
+    width: 377px;
+    height: 436px;
+    transition: margin-left 0.3s ease;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    margin-left: -223px;
+    width: 377px;
+    height: 436px;
+    transition: margin-left 0.3s ease;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-left: -297px;
+    width: 377px;
+    height: 436px;
+    transition: margin-left 0.3s ease;
+  }
+}
+
+.image {
+  object-fit: cover;
+}

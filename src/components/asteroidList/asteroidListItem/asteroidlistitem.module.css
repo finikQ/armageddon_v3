@@ -1,0 +1,131 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.date {
+  flex: 1 0 0;
+  color: var(--White-Base, #fff);
+
+  font-family: var(--Helvetica);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.body {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.info__dist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.info__dist__km {
+  color: #fff;
+  text-align: center;
+
+  font-family: var(--Helvetica);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.info__img__container {
+  display: flex;
+  height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.info__img {
+  width: "auto";
+  height: "auto";
+}
+
+.info__asteroid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info__asteroid__name {
+  color: var(--White-Base, #fff);
+  font-family: var(--Helvetica);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration-line: underline;
+  white-space: nowrap;
+}
+
+.info__asteroid__diameter {
+  color: var(--White-Base, #fff);
+
+  font-family: var(--Helvetica);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.btn_toCart {
+  display: flex;
+  padding: 2px 11px;
+  align-items: center;
+  gap: 2px;
+
+  border-radius: 16px;
+  background: var(--Orange-Smooth, rgba(248, 102, 0, 0.15));
+  border: none;
+  cursor: pointer;
+}
+
+.btn_toCart:hover {
+  background: var(--Orange-Base, #f86600);
+}
+
+.btn_toCart_text {
+  color: var(--Orange-Base, #f86600);
+  font-family: var(--Helvetica);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.btn_toCart:hover .btn_toCart_text {
+  color: var(--White-Base, #fff);
+}
+
+.desc_danger {
+  color: var(--gray-30, #e3e5e5);
+
+  font-family: var(--Helvetica);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
