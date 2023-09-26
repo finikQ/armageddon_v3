@@ -12,13 +12,12 @@ async function getAsteroids(currentDay: string) {
 }
 
 async function getCurrentDay() {
-  const response = await fetch(
-    `https://timeapi.io/api/Time/current/zone?timeZone=Europe/Moscow`
-  );
-  const data = await response.json();
-  const result = data.dateTime.split("T")[0];
+  const date = new Date();
+  const result = date.toISOString().split("T")[0];
   return result;
 }
+
+export const revalidate = 1800;
 
 export default async function Home() {
   let currentDay = await getCurrentDay();
